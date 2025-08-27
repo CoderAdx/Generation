@@ -1,8 +1,8 @@
 const rl = require('readline-sync');
 
 let n;
-let par = 0;
-let impar = 0;
+let pares = 0;
+let impares = 0;
 
 
 
@@ -10,11 +10,11 @@ for (let contador = 1; contador <= 10; contador++){
     n = rl.questionInt(`Digite o ${contador}º número: `);
 
     if(n % 2 === 0){
-        par++
+        pares++
     } else {
-        impar++
+        impares++
     }
 }
 
-console.log(`Total de números pares: ${par}`);
-console.log(`Total de números ímpares: ${impar}`);
+console.log(`Total de números pares: ${pares}`);
+console.log(`Total de números ímpares: ${impares}`);
